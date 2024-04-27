@@ -31,10 +31,10 @@ The configuration sets the `remote_write` URL to the Greptime URL and sets the i
 
 We use [Docker Compose](https://docs.docker.com/compose/) to start GreptimeDB, Prometheues, node_exporter and Grafana. To do this, create a `docker-compose.yml` file with the following content:
 
-```yaml
+```yaml-vue
 services:
   grafana:
-    image: grafana/grafana-oss:9.5.15
+    image: grafana/grafana-oss:{{grafanaVersion}}
     container_name: grafana
     ports:
       - 3000:3000
